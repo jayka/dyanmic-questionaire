@@ -11,15 +11,12 @@ import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
-import org.hibernate.annotations.Cascade;
-
 @Entity
 @Table(name="questionaire")
 public class Element {
 
 	@Id
 	Integer id;
-//	int parentId;
 	Integer masterId;
 	
 	Integer type;
@@ -42,14 +39,6 @@ public class Element {
 	public void setId(int id) {
 		this.id = id;
 	}
-
-/*	public int getParentId() {
-		return parentId;
-	}
-
-	public void setParentId(int parentId) {
-		this.parentId = parentId;
-	}*/
 
 	public int getMasterId() {
 		return masterId;
